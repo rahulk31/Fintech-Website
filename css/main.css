@@ -20,8 +20,29 @@ p{
 }
 
 /*Utility Class*/
+.container{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
+.text-center{
+    text-align: center;
+}
+
 .text-primary{
     color: #93cb52;
+}
+
+.bg-light{
+    background: #f4f4f4;
+    color: #333;
+}
+
+.bg-dark{
+    background: #333;
+    color: #fff;
 }
 
 .l-heading{
@@ -30,9 +51,34 @@ p{
     line-height: 1.1;
 }
 
+.m-heading{
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+
 .lead{
     font-size: 1.3rem;
     margin-bottom: 2rem;
+}
+
+.py-1{
+    padding: 1.5rem 0;
+}
+.py-2{
+    padding: 2rem 0;
+}
+.py-3{
+    padding: 3rem 0;
+}
+.p-1{
+    padding: 1.5rem;
+}
+.p-2{
+    padding: 2rem;
+}
+.p-3{
+    padding: 3rem;
 }
 
 .btn{
@@ -52,6 +98,22 @@ p{
     background: #333;
     color: #fff;
 }
+
+.bg-primary{
+    background: #93cb52;
+    color: #fff;
+}
+
+.list{
+    list-style: none;
+    margin-bottom: 0.5rem 0;
+}
+
+.list li{
+    padding: 0.5rem 0;
+    border-bottom: #444 dotted 1px;
+}
+
 
 /*Navbar*/
 #navbar{
@@ -102,7 +164,83 @@ p{
     width: 100%;
     top: 65px;
     left: 0;
+    right: 0;
+    bottom: 0;
     background-color: rgba(0,0,0,0.75);
     overflow: hidden; 
 }
 
+
+/* Services */
+#services .items{
+    display: flex;
+    padding: 1rem;
+    text-align: center;
+}
+
+#sevices .item{
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+}
+
+#services .items .item i{
+    background: #93cb52;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+/* About */
+#about
+{
+    display: flex;
+}
+
+#about div{
+    flex: 1;
+}
+
+#about .about-img{
+    background: url('../assets/people.jpg') no-repeat center center/cover ;
+}
+
+/*Clients */
+#clients .items{
+    display: flex;
+}
+
+#clients .items img{
+    display: block;
+    margin: auto;
+    width: 60%;
+}
+
+
+/*Contact*/
+
+#contact {
+    display: flex;
+}
+
+#contact .map, #contact .contact-form{
+    flex: 1;
+}
+
+#contact .map {
+    background: url('../assets/man.jpg') no-repeat center center/cover;    
+}
+
+.form-group {
+    margin: 0.75rem;
+}
+
+#contact .contact-form label {
+    display: block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea{
+    width: 100%;
+    padding: 0.5rem;
+}
