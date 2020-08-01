@@ -64,9 +64,9 @@
 }
 
 @media(max-height: 568px){
-  .showcase-content{
+/*   .showcase-content{
     margin-top: -2rem;
-  }
+  } */
 
   .l-heading{
     font-size: 3rem;
